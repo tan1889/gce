@@ -19,7 +19,7 @@ class TorchSGD:
         criterion: loss function (nll or mse or l1)
         val_criterion: For regression task, use this option to set different loss for training and validation.
             E.g. train loss is mse, but l1 could be used for validation and showing result.
-        args: training parameters passed in from run_nn_gce.py
+        args: training parameters passed in from run_gce_nn.py
         name: name of this instance, which serves as prefix to the text printed out
         sum_net: for wgnet algorithm, this is the convex combination of modules that has been trained,
             the output of this net will be combined with the output of the module to be trained.

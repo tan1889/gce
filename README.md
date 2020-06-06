@@ -28,20 +28,20 @@ will run experiments using XGBoost (XGB), Random Forest (RF), Neural Network (NN
 ## Executing an Individual Case
 
 Use run_*.py to run an individual case with specific algorithm, dataset, and parameters. 
-`run_nn_gce.py` is for execution of GCE, NGCE, and NN. 
+`run_gce_nn.py` is for execution of GCE, NGCE, and NN. 
 XGB and RF use different execution scripts: `run_xgboost.py` and `run_rforest.py`.
 Please see the comments in these scripts for the meaning and possible values of each parameter.
 
 The following command will train the model with default value of parameters.
 
-    python run_nn_gce.py
+    python run_gce_nn.py
 
 The following command will train the model with some parameters altered from the default value. 
 It is possible to alter any/all parameters this way.
 
-    python run_model.py --dataset msd --algorithm pfw --model NN2 --epoch 5000 --weight-decay 0.0001 --loss l2 --activation relu
+    python run_gce_nn.py --dataset msd --algorithm pfw --model NN2 --epoch 5000 --weight-decay 0.0001 --loss l2 --activation relu
 
-Help on the parameters is available using the following commands.
+Help on the parameters of run_*.py is available using the following commands.
 
     python run_nn_gce.py --help 
     python run_xgboost.py --help
